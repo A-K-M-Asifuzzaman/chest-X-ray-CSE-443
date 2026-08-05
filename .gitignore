@@ -1,0 +1,16 @@
+# The chest X-ray dataset is ~1.3 GB and is not committed.
+# See the README for the download link and the expected folder layout.
+data/chest_xray/
+
+# Decoded image cache rebuilt automatically by the notebook
+data/cache/
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+venv/
+env/
+.vscode/
+.idea/
