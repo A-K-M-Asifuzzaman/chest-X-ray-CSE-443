@@ -1,0 +1,57 @@
+{
+  "device": "mps",
+  "image_size": 180,
+  "architecture": "custom 4-block VGG-style CNN",
+  "parameters": 1172897,
+  "epochs_run": 35,
+  "best_epoch": 32,
+  "training_minutes": 14.46,
+  "split": {
+    "train_images": 4647,
+    "train_patients": 2575,
+    "val_images": 559,
+    "val_patients": 286,
+    "test_images": 618,
+    "test_patients": 426,
+    "grouped_by_patient": true
+  },
+  "pos_weight": 0.3548,
+  "validation_auc": 0.9989,
+  "thresholds": {
+    "f1_optimal": 0.105,
+    "high_recall": 0.2168,
+    "chosen": 0.2168
+  },
+  "test_metrics": {
+    "default (0.50)": {
+      "threshold": 0.5,
+      "accuracy": 0.9045,
+      "precision": 0.8744,
+      "recall": 0.9897,
+      "specificity": 0.7619,
+      "f1": 0.9285,
+      "roc_auc": 0.9701,
+      "pr_auc": 0.9775
+    },
+    "F1-optimal (0.10)": {
+      "threshold": 0.105,
+      "accuracy": 0.8576,
+      "precision": 0.8161,
+      "recall": 0.9974,
+      "specificity": 0.6234,
+      "f1": 0.8977,
+      "roc_auc": 0.9701,
+      "pr_auc": 0.9775
+    },
+    "high-recall (0.22)": {
+      "threshold": 0.2168,
+      "accuracy": 0.8786,
+      "precision": 0.8406,
+      "recall": 0.9948,
+      "specificity": 0.684,
+      "f1": 0.9112,
+      "roc_auc": 0.9701,
+      "pr_auc": 0.9775
+    }
+  }
+}
